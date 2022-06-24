@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --accent-color: #6200ee;
+}
 a{
   text-decoration: none;
 }
@@ -34,7 +36,7 @@ nav .div-logo{
   display: flex;
   justify-content:flex-start;
   align-items: center;
-  
+
 }
 
 nav .div-logo img{
@@ -60,7 +62,7 @@ nav ul li a{
 
 nav ul li a:hover{
   color: #304FFE;
-  
+
 }
 
 nav ul li a:hover{
@@ -107,6 +109,7 @@ header .header--about-socials ul{
   background-size: 152% 100%;
   background: #304FFE;
   border: 2px solid #304FFE;
+  cursor: pointer;
 }
 .btn:hover{
   background: transparent;
@@ -156,7 +159,7 @@ header .header--about-socials ul{
 
 .header--about{
   flex: auto;
-  
+
 }
 
 .header--about p{
@@ -199,7 +202,7 @@ header .header--about-socials ul{
 }
 
 .wrapper > section:nth-child(2n +1){
- 
+
   background-color: #EAF2FD;
 }
 
@@ -265,7 +268,7 @@ header .header--about-socials ul{
 
 .skills-php{
   color:  #7175AA;
-  
+
 }
 
 .skills-css{
@@ -370,4 +373,116 @@ header .header--about-socials ul{
 
 .card-text h4,.card-text p{
   margin-bottom: 18px;
+}
+
+#contacto{
+  color: #ffffff;
+  text-align: center;
+  background-color: #1c1b1b;
+}
+
+.section--contacto h5{
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 95%;
+  max-width: 800px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%), 0 0 15px 0 rgb(0 0 0 / 2%), 0 0 20px 4px rgb(0 0 0 / 6%);
+}
+
+.input-container, .textarea-container {
+  background-color: #f5f5f5;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  height: 56px;
+  transition: background-color 500ms;
+}
+
+.textarea-container{
+  height: auto;
+}
+
+
+.input-container:hover, .textarea-container:hover {
+  background-color: #ececec;
+}
+
+.input-container:focus-within, .textarea-container:focus-within {
+  background-color: #dcdcdc;
+}
+
+.input-container label, .textarea-container label {
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  transform-origin: left top;
+  user-select: none;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
+}
+
+.textarea-container label {
+
+  top: 12%;
+
+}
+
+input, textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  caret-color: var(--accent-color);
+  border: 2px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.87);
+  transition: border 500ms;
+  padding: 20px 16px 6px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--accent-color);
+}
+
+input:focus + label, textarea:focus + label {
+  color: var(--accent-color);
+}
+
+input:focus + label,
+input.is-valid + label, textarea:focus + label,
+textarea.is-valid + label {
+  transform: translateY(-100%) scale(0.75);
+}
+
+.button-container button{
+  width: 100%;
+}
+
+footer{
+  padding: 1rem;
 }

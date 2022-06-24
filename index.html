@@ -34,11 +34,11 @@
           <li>
             <a href="index.html"> Sobre Mí </a>
           </li>
-          <li><a href="about.html">Skills</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="formacion.html">Formación</a></li>
-          <li><a href="proyectos.html">Proyectos</a></li>
-          <li><a href="contact.html">wilmerortizcastillo.af@gmail.com</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#formacion-academica">Formación</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">wilmerortizcastillo.af@gmail.com</a></li>
         </ul>
       </nav>
       <!--/nav-->
@@ -273,7 +273,7 @@
       <!--/section formacion academica-->
 
       <!-- section Experiencia profesional -->
-      <section class="padding-left-right" id="experiencia-profesional">
+      <section class="padding-left-right" id="proyectos">
         <article class="section--experiencia margin-bottom">
           <h2>EXPERIENCIA PROFESIONAL</h2>
 
@@ -423,24 +423,50 @@
       <!-- section contacto -->
       <section class="padding-left-right" id="contacto">
         <article class="section--contacto margin-bottom">
-          <h2>CONTACTO</h2>
+          <h2 class="margin-bottom">CONTACTO</h2>
           <h5>¿Quieres contactarte con migo?</h5>
           <h5>
             Complete el siguiente formularioy me pondre en contacto con ustes lo
             antes posible
           </h5>
-        </article>
-        <article>
-          <img src="img/contacto.png" alt="Contacto" />
-          <div class="formulario">
-            <form action=""></form>
+          <div class="form-container">
+            <form action="">
+              <div class="input-container">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Nombre</label>
+              </div>
+
+              <div class="input-container">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Email</label>
+              </div>
+
+              <div class="input-container">
+                <input type="text" id="asunto" name="asunto" required />
+                <label for="asunto">Asunto</label>
+              </div>
+
+              <div class="textarea-container">
+                <textarea name="mensaje" id="mensaje" rows="10" required></textarea>
+                <label for="mensaje">Mensaje</label>
+              </div>
+
+              <div class="button-container">
+                <button class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
           </div>
         </article>
       </section>
       <!--/section contacto -->
 
       <!-- footer -->
-      <footer></footer>
+      <footer
+        class="d-flex flex-direction-column justify-content-center align-items-center"
+      >
+        <h2>Desarrollado por Wilmer Ortiz Castillo</h2>
+        <h3>2022</h3>
+      </footer>
       <!--/footer-->
     </div>
     <script src="js/script.js"></script>
