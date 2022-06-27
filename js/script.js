@@ -109,12 +109,9 @@ var btnShow = document.getElementById('btn-show');
 
 btnShow.addEventListener('click', showHideMenuMobile);
 
-/*
-document.getElementsByTagName('a').forEach(function(element) {
-  element.addEventListener('click', showHideMenuMobile);
-})
-*/
-
+/**
+ * Agregamos un evento al tag (a) mediante su clase (.text-nav-mobile) para mostrar y ocultar el menu de navegación
+ */
 let elements = document.getElementsByClassName('text-nav-mobile')
 let spreadArray = [...elements];
 

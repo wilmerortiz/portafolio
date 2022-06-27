@@ -151,6 +151,10 @@ header .header--foto{
   width: 500px;
 }
 
+section{
+  transition: all 0.3s;
+}
+
 .justify-content-flex-start{
   justify-content:flex-start;
 }
