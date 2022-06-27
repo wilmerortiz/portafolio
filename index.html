@@ -27,27 +27,100 @@
       <nav
         class="padding-left-right margin-bottom d-flex align-items-center justify-content-space-between"
       >
-        <div class="div-logo">
+        <div class="div-logo justify-content-flex-start">
+          <img src="img/logo-wilmer2.png" alt="LOGO" />
+        </div>
+        <div id="div-show">
+          <button id="btn-show">
+            <i id="icon-menu-mobile" class="fa-solid fa-bars"></i>
+          </button>
+          <!--<button id="btn-hide" style="display: none"><i class="fa-solid fa-x"></i></i></button>-->
+        </div>
+        <ul class="d-flex justify-content-space-evenly" id="navigation">
+          <li>
+            <a href="index.html"
+              ><i class="fa-solid fa-user-tie"></i> Sobre Mí
+            </a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fa-solid fa-id-card"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#hobbies"
+              ><i class="fa-solid fa-person-swimming"></i> Hobbies</a
+            >
+          </li>
+          <li>
+            <a href="#formacion-academica"
+              ><i class="fa-solid fa-user-graduate"></i> Formación</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos"
+              ><i class="fa-solid fa-chalkboard-user"></i> Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#contacto"
+              ><i class="fa-solid fa-envelope-open-text"></i>
+              wilmerortizcastillo.af@gmail.com</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--/nav-->
+
+      <!--nav mobile-->
+      <nav
+        class="padding-left-right margin-bottom d-flex flex-direction-column align-items-center justify-content-space-between"
+        id="nav-mobile"
+      >
+        <div class="div-logo justify-content-center">
           <img src="img/logo-wilmer2.png" alt="LOGO" />
         </div>
         <ul class="d-flex justify-content-space-evenly">
           <li>
-            <a href="index.html"> Sobre Mí </a>
+            <a href="index.html" class="text-nav-mobile"
+              ><i class="fa-solid fa-user-tie"></i> Sobre Mí
+            </a>
           </li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#formacion-academica">Formación</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">wilmerortizcastillo.af@gmail.com</a></li>
+          <li>
+            <a href="#skills" class="text-nav-mobile"
+              ><i class="fa-solid fa-id-card"></i> Skills</a
+            >
+          </li>
+          <li>
+            <a href="#hobbies" class="text-nav-mobile">
+              <i class="fa-solid fa-person-swimming"></i> Hobbies</a
+            >
+          </li>
+          <li>
+            <a href="#formacion-academica" class="text-nav-mobile"
+              ><i class="fa-solid fa-user-graduate"></i> Formación</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" class="text-nav-mobile"
+              ><i class="fa-solid fa-chalkboard-user"></i> Proyectos</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" class="text-nav-mobile"
+              ><i class="fa-solid fa-envelope-open-text"></i>
+              wilmerortizcastillo.af@gmail.com</a
+            >
+          </li>
         </ul>
       </nav>
-      <!--/nav-->
+      <!--/nav mobile -->
+
       <!-- header -->
       <header
         class="padding-left-right margin-bottom d-flex align-items-center"
         id="about"
+        class="header--about"
       >
-        <article class="header--about">
+        <article>
           <h1 class="header--about-name">Hola, soy Wilmer Ortiz Castillo</h1>
           <h3 class="header--about-prosesion">
             Ing. de Sistemas e Informática, Full Stack Web Developer
@@ -104,7 +177,9 @@
             </a>
           </div>
         </article>
-        <div class="header--foto" style="width: 500px">
+        <div
+          class="header--foto d-flex justify-content-center align-items-center"
+        >
           <img src="img/wilmer.jpg" alt="FOTO" style="width: 100%" />
         </div>
       </header>
@@ -132,6 +207,12 @@
             >
               <i class="fa-brands fa-php"></i>
               <h5>php</h5>
+            </div>
+            <div
+              class="card skills-cakephp d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img src="img/skills/cakephp.png" alt="" width="40%" />
+              <h5>CakePhp</h5>
             </div>
             <div
               class="card skills-css d-flex flex-direction-column justify-content-center align-items-center"
@@ -321,7 +402,7 @@
       <!-- section Experiencia profesional -->
       <section class="padding-left-right" id="proyectos">
         <article class="section--experiencia margin-bottom">
-          <h2>EXPERIENCIA PROFESIONAL</h2>
+          <h2 class="margin-bottom text-center">EXPERIENCIA PROFESIONAL</h2>
 
           <div class="experiencia-profesional">
             <div class="card">
@@ -472,38 +553,43 @@
           <h2 class="margin-bottom">CONTACTO</h2>
           <h5>¿Quieres contactarte con migo?</h5>
           <h5>
-            Complete el siguiente formularioy me pondre en contacto con ustes lo
+            Complete el siguiente formularioy me pondre en contacto con usted lo
             antes posible
           </h5>
           <div class="form-container">
-            <form action="">
+            <form action="/" id="formulario">
               <div class="input-container">
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="nombre" name="nombre" />
                 <label for="name">Nombre</label>
+                <span class="error" aria-live="polite" id="error-nombre"></span>
               </div>
 
               <div class="input-container">
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" />
                 <label for="email">Email</label>
+                <span class="error" aria-live="polite" id="error-email"></span>
               </div>
 
               <div class="input-container">
-                <input type="text" id="asunto" name="asunto" required />
+                <input type="text" id="asunto" name="asunto" />
                 <label for="asunto">Asunto</label>
+                <span class="error" aria-live="polite" id="error-asunto"></span>
               </div>
 
               <div class="textarea-container">
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  rows="10"
-                  required
-                ></textarea>
+                <textarea name="mensaje" id="mensaje" rows="10"></textarea>
                 <label for="mensaje">Mensaje</label>
+                <span
+                  class="error"
+                  aria-live="polite"
+                  id="error-mensaje"
+                ></span>
               </div>
 
               <div class="button-container">
-                <button class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary" id="btnDone">
+                  Enviar
+                </button>
               </div>
             </form>
           </div>
