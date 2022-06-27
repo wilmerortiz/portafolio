@@ -50,8 +50,11 @@
         <article class="header--about">
           <h1 class="header--about-name">Hola, soy Wilmer Ortiz Castillo</h1>
           <h3 class="header--about-prosesion">
-            Ing. de sistemas, Desarrollador Web
+            Ing. de Sistemas e Informática, Full Stack Web Developer
           </h3>
+          <p>
+            Tengo <span id="edad"></span> años de edad, de nacionalidad Peruana.
+          </p>
           <p>
             Como ingeniero de Sistemas e Informática, mi formación académica,
             humana y laboral se ha enfocado al desarrollo y la implementación de
@@ -66,28 +69,37 @@
           <p>
             Actualmente tengo conocimientos en las siguientes tecnologías:
             Javascript, React Redux, NodeJs, Express, PostgreSql Sequelize,
-            MySql, SQLServer, Framework Cakephp
+            MySql, SQLServer, Framework Cakephp, Salesforce (Apex, LWC, SOQL,
+            OMNISTUDIO VLOCITY)
           </p>
           <div class="header--about-socials d-flex flex-direction-column">
             <ul class="d-flex">
               <li>
-                <a href="Github.com">
+                <a href="https://github.com/wilmerortiz" target="_blank">
                   <i class="fa-brands fa-github"></i>
                   Github
                 </a>
               </li>
               <li>
-                <a href="Linkedin.com">
+                <a
+                  href="https://www.linkedin.com/in/wilmer-ortiz-castillo/"
+                  target="_blank"
+                >
                   <i class="fa-brands fa-linkedin"></i> Linkedin
                 </a>
               </li>
+              <!--
               <li>
                 <a href="Instagram.com">
                   <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
-              </li>
+              </li>-->
             </ul>
-            <a href="curriculum" class="btn btn-primary">
+            <a
+              href="https://rxresu.me/es/wilmerortizcastillo.af/wilmer-ortiz-castillo"
+              class="btn btn-primary"
+              target="_blank"
+            >
               <i class="fa-solid fa-id-badge"></i> Curriculum
             </a>
           </div>
@@ -104,46 +116,80 @@
           <h2>SKILLS</h2>
           <div class="skills">
             <div
-              class="skills-html5 d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-html5 d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-html5"></i>
               <h5>Html 5</h5>
             </div>
             <div
-              class="skills-javascript d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-javascript d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-js-square"></i>
               <h5>Javascript</h5>
             </div>
             <div
-              class="skills-php d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-php d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-php"></i>
               <h5>php</h5>
             </div>
             <div
-              class="skills-css d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-css d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-css3-alt"></i>
               <h5>Css 3</h5>
             </div>
             <div
-              class="skills-node d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-node d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-node-js"></i>
               <h5>Node Js</h5>
             </div>
             <div
-              class="skills-react d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-react d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-react"></i>
               <h5>React</h5>
             </div>
             <div
-              class="skills-bootstrap d-flex flex-direction-column justify-content-center align-items-center"
+              class="card skills-bootstrap d-flex flex-direction-column justify-content-center align-items-center"
             >
               <i class="fa-brands fa-bootstrap"></i>
               <h5>Bootstrap</h5>
+            </div>
+            <div
+              class="card skills-postgresql d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img src="img/skills/postgresql.webp" alt="" width="40%" />
+              <h5>PostgreSql</h5>
+            </div>
+            <div
+              class="card skills-mysql d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img src="img/skills/mysql2.png" alt="" width="40%" />
+              <h5>MySQL</h5>
+            </div>
+            <div
+              class="card skills-material d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img src="img/skills/material-ui.png" alt="" width="40%" />
+              <h5>Material-ui</h5>
+            </div>
+            <div
+              class="card skills-salesforce d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img
+                src="img/skills/salesforce.com_logo.svg.png"
+                alt=""
+                width="40%"
+              />
+              <h5>Salesforce</h5>
+            </div>
+            <div
+              class="card skills-omnistudio d-flex flex-direction-column justify-content-center align-items-center"
+            >
+              <img src="img/skills/omnistudio.png" alt="" width="40%" />
+              <h5>Omnistudio</h5>
             </div>
           </div>
         </article>
@@ -447,7 +493,12 @@
               </div>
 
               <div class="textarea-container">
-                <textarea name="mensaje" id="mensaje" rows="10" required></textarea>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  rows="10"
+                  required
+                ></textarea>
                 <label for="mensaje">Mensaje</label>
               </div>
 
